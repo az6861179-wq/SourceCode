@@ -3,222 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>معرض أعمالي | برمجة وتصميم</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
-        body {
-            font-family: 'Cairo', sans-serif;
-            background-color: #060814;
-        }
-        .neon-border {
-            box-shadow: 0 0 15px rgba(147, 51, 234, 0.2);
-            border: 1px solid rgba(147, 51, 234, 0.3);
-        }
-        .neon-border:hover {
-            box-shadow: 0 0 25px rgba(6, 182, 212, 0.4);
-            border: 1px solid rgba(6, 182, 212, 0.6);
-            transform: translateY(-4px);
-            transition: all 0.4s ease;
-        }
-        .text-gradient {
-            background: linear-gradient(135deg, #a855f7, #06b6d4);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    </style>
-</head>
-<body class="text-gray-300 antialiased">
-
-    <nav class="sticky top-0 z-50 bg-[#060814]/90 backdrop-blur-lg border-b border-gray-800/60">
-        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-black text-white tracking-wide">
-                <span class="text-purple-500">&lt;</span> المطور الرقمي <span class="text-cyan-400">/&gt;</span>
-            </div>
-            <div class="hidden md:flex space-x-8 space-x-reverse text-sm">
-                <a href="#about" class="hover:text-cyan-400 transition">من أنا</a>
-                <a href="#services" class="hover:text-cyan-400 transition">الخدمات</a>
-                <a href="#portfolio" class="hover:text-cyan-400 transition">معرض الأعمال</a>
-                <a href="#contact" class="hover:text-cyan-400 transition">تواصل معي</a>
-            </div>
-            <a href="#contact" class="border border-purple-500 text-purple-400 hover:bg-purple-500 hover:text-white px-5 py-2 rounded-lg text-xs font-bold transition">
-                ابدأ مشروعك الآن
-            </a>
-        </div>
-    </nav>
-
-    <section id="about" class="py-24 relative overflow-hidden">
-        <div class="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
-            <div>
-                <span class="text-xs font-bold uppercase tracking-widest text-cyan-400 bg-cyan-500/10 px-3 py-1 rounded-full">متاح للمشاريع الجديدة</span>
-                <h1 class="text-4xl md:text-5xl font-black text-white mt-4 leading-relaxed md:leading-normal">
-                    أحول أفكارك إلى <span class="text-gradient">واقع رقمي</span> يفرض وجوده في السوق
-                </h1>
-                <p class="text-gray-400 mt-6 text-base md:text-lg leading-relaxed">
-                    مرحباً بك، أنا مصمم شعارات ومطور ويب متخصص في بناء واجهات وتطبيقات ويب سريعة وحديثة، بجانب ابتكار هويات بصرية فريدة تترك انطباعاً دائماً لدى عملائك.
-                </p>
-                <div class="mt-8 flex flex-wrap gap-4">
-                    <a href="#portfolio" class="bg-gradient-to-r from-purple-600 to-cyan-500 text-white font-bold px-8 py-3.5 rounded-xl text-sm hover:opacity-90 transition shadow-lg shadow-purple-500/20">
-                        تصفح معرض أعمالي
-                    </a>
-                    <a href="#services" class="bg-gray-900 border border-gray-800 text-gray-300 px-8 py-3.5 rounded-xl text-sm hover:bg-gray-800 transition">
-                        استكشف خدماتي
-                    </a>
-                </div>
-            </div>
-            
-            <div class="relative flex justify-center items-center">
-                <div class="w-72 h-72 md:w-96 md:h-96 bg-gradient-to-r from-purple-600/20 to-cyan-500/20 rounded-full blur-3xl absolute"></div>
-                <div class="bg-[#0b0f19] border border-gray-800 p-8 rounded-2xl w-full max-w-md relative z-10 shadow-2xl">
-                    <div class="flex items-center space-x-2 space-x-reverse mb-4">
-                        <span class="w-3 h-3 rounded-full bg-red-500"></span>
-                        <span class="w-3 h-3 rounded-full bg-yellow-500"></span>
-                        <span class="w-3 h-3 rounded-full bg-green-500"></span>
-                    </div>
-                    <pre class="text-xs md:text-sm text-cyan-400 overflow-x-auto font-mono">
-<code><span class="text-purple-400">const</span> professional = {
-  skills: [<span class="text-yellow-300">'Web_Development'</span>, <span class="text-yellow-300">'Logo_Design'</span>],
-  tools: [<span class="text-yellow-300">'TailwindCSS'</span>, <span class="text-yellow-300">'GitHub'</span>],
-  passion: <span class="text-yellow-300">'Building elite experiences'</span>,
-  readyToWork: <span class="text-purple-400">true</span>
-};</code></pre>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="services" class="py-20 bg-[#090d1f]">
-        <div class="container mx-auto px-6">
-            <div class="max-w-2xl mx-auto text-center mb-16">
-                <h2 class="text-3xl font-bold text-white leading-tight">الخدمات التي أتميز بتقديمها</h2>
-                <p class="text-gray-400 mt-2 text-sm leading-relaxed">نجمع بين جمال التصميم وقوة البرمجة لنخرج بمنتج نهائي متكامل دون أي تعقيد وتداخل في النصوص.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-[#060814] p-8 rounded-2xl neon-border transition">
-                    <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center text-cyan-400 text-2xl mb-6">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3">برمجة وتطوير المواقع</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        بناء مواقع ويب سريعة، متجاوبة ومحمية، باستخدام أحدث التقنيات البرمجية. من صفحات الهبوط التعريفية إلى المتاجر الإلكترونية المعقدة وتخصيص قوالب المنصات.
-                    </p>
-                </div>
-
-                <div class="bg-[#060814] p-8 rounded-2xl neon-border transition">
-                    <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 text-2xl mb-6">
-                        <i class="fas fa-bezier-curve"></i>
-                    </div>
-                    <h3 class="text-xl font-bold text-white mb-3 leading-snug">تصميم الشعارات والهويات</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">
-                        ابتكار شعارات فريدة وعصرية تعبر عن جوهر مشروعك أو قناتك. أركز على البساطة، التميز، وقابلية الشعار للاستخدام على جميع المنصات والمطبوعات المختلفة.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="portfolio" class="py-20">
-        <div class="container mx-auto px-6">
-            <div class="max-w-2xl mx-auto text-center mb-16">
-                <h2 class="text-3xl font-bold text-white">معرض أعمالي السابقة</h2>
-                <p class="text-gray-400 mt-2 text-sm leading-relaxed">شاهد عينة من المشاريع والمواقع التي قمت بتصميمها وبرمجتها بالكامل بنصوص مريحة للعين وقابلة للقراءة المتوازنة.</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                <div class="bg-[#090d1f] rounded-2xl border border-gray-800 overflow-hidden flex flex-col justify-between group">
-                    <div class="p-8 bg-gradient-to-br from-purple-900/40 to-black/20 h-52 flex flex-col justify-center relative overflow-hidden">
-                        <span class="absolute top-4 right-4 bg-purple-500/20 text-purple-300 text-xs font-bold px-3 py-1 rounded-full border border-purple-500/30">برمجة ويب + تصميم منصة</span>
-                        <h4 class="text-2xl font-black text-white mb-2 leading-snug">نموذج من أعمالي السابقة</h4>
-                        <p class="text-xs text-purple-200 leading-relaxed">منصة متكاملة لصناع محتوى الألعاب والصيانة الرقمية</p>
-                    </div>
-                    <div class="p-6 bg-[#060814] border-t border-gray-800/80 flex-grow flex flex-col justify-between">
-                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                            هذا المشروع عبارة عن صفحة هبوط متكاملة تم بناؤها وتصميمها مخصصة لعالم الألعاب الإلكترونية، تحتوي على أقسام لعرض خدمات صيانة عتاد الـ PS5، المتاجر الإلكترونية، والكتيبات الرقمية مع توزيع متناسق للألوان والهوية البصرية.
-                        </p>
-                        <div class="flex justify-between items-center pt-4 border-t border-gray-800">
-                            <span class="text-xs text-gray-500 font-mono">التقنيات: HTML5 / TailwindCSS</span>
-                            <a href="https://az6861179-wq.github.io/Apricot-Gamer5/" target="_blank" class="bg-purple-600/20 text-cyan-400 hover:bg-cyan-500 hover:text-black border border-cyan-500/30 text-xs font-bold px-4 py-2 rounded-xl flex items-center gap-1.5 transition">
-                                معاينة المشروع الحي <i class="fas fa-external-link-alt text-[10px]"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="bg-[#090d1f] rounded-2xl border border-gray-800 overflow-hidden flex flex-col justify-between group">
-                    <div class="p-8 bg-gradient-to-br from-cyan-900/40 to-black/20 h-52 flex flex-col justify-center relative overflow-hidden">
-                        <span class="absolute top-4 right-4 bg-cyan-500/20 text-cyan-300 text-xs font-bold px-3 py-1 rounded-full border border-cyan-500/30">هوية بصرية</span>
-                        <h4 class="text-2xl font-black text-white mb-2 leading-snug">تصميم شعارات قنوات ألعاب وصناعة محتوى</h4>
-                        <p class="text-xs text-cyan-200 leading-relaxed">شعارات مبتكرة مبنية على أسس الرسم الرقمي الحديث</p>
-                    </div>
-                    <div class="p-6 bg-[#060814] border-t border-gray-800/80 flex-grow flex flex-col justify-between">
-                        <p class="text-gray-400 text-sm mb-6 leading-relaxed">
-                            تصميم باقة شعارات احترافية موجهة لرواد الأعمال وصناع المحتوى على يوتيوب، تعتمد على دمج الفكرة العميقة بالبساطة البصرية لتناسب الخلفيات الداكنة والفاتحة وتظهر بقوة كأيقونة تطبيق أو قناة.
-                        </p>
-                        <div class="flex justify-between items-center pt-4 border-t border-gray-800">
-                            <span class="text-xs text-gray-500 font-mono">التقنيات: Illustrator / AI Design</span>
-                            <span class="text-gray-500 text-xs font-bold">معرض الصور قريباً</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-20 bg-[#090d1f] border-t border-gray-900">
-        <div class="container mx-auto px-6 max-w-3xl text-center">
-            <h2 class="text-3xl font-bold text-white leading-tight">لنبدأ العمل معاً</h2>
-            <p class="text-gray-400 text-sm mb-12 leading-relaxed max-w-xl mx-auto">
-                سواء كنت بحاجة إلى موقع برمي مخصص، أو شعار يعبر عن فكرة مشروعك بدقة، يمكنك التواصل معي مباشرة عبر المنصات التالية وسنتحدث عن تفاصيل مشروعك القادم.
-            </p>
-            
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-                
-                <div class="bg-[#060814] p-5 rounded-2xl border border-gray-800/80 flex flex-col justify-between items-center text-center">
-                    <div class="flex flex-col items-center gap-2 mb-4">
-                        <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 text-xl">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs text-gray-500 block">راسلني عبر البريد الإلكتروني</span>
-                            <span class="text-sm font-bold text-white font-mono select-all">az6861179@gmail.com</span>
-                        </div>
-                    </div>
-                    <a href="mailto:az6861179@gmail.com" class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2.5 rounded-xl text-xs transition">
-                        إرسال رسالة بريد
-                    </a>
-                </div>
-
-                <div class="bg-[#060814] p-5 rounded-2xl border border-gray-800/80 flex flex-col justify-between items-center text-center">
-                    <div class="flex flex-col items-center gap-2 mb-4">
-                        <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center text-cyan-400 text-xl">
-                            <i class="fab fa-instagram"></i>
-                        </div>
-                        <div>
-                            <span class="text-xs text-gray-500 block">تابعني وتواصل معي عبر</span>
-                            <span class="text-sm font-bold text-white font-mono">Instagram</span>
-                        </div>
-                    </div>
-                    <a href="https://www.instagram.com/rabbit.5018293?igsh=MTJ2NGZhbTZ3ZTlkcA%3D%3D" target="_blank" class="w-full bg-cyan-500 hover:bg-cyan-600 text-black font-bold py-2.5 rounded-xl text-xs transition">
-                        زيارة حساب إنستغرام
-                    </a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-[#060814] py-8 border-t border-gray-900/60 text-center text-xs text-gray-600 relative z-10">
-        <div class="container mx-auto px-6">
-            <p>© 2026 جميع الحقوق محفوظة لـ مبرمج ومصمم المواقع.</p>
-        </div>
-    </footer>
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>معرض أعمالي | SourceCode</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -243,14 +27,25 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        /* أنيميشن النوافذ المنبثقة */
+        .modal-active {
+            animation: fadeIn 0.3s ease forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
     </style>
 </head>
 <body class="text-gray-300 antialiased">
 
     <nav class="sticky top-0 z-50 bg-[#060814]/90 backdrop-blur-lg border-b border-gray-800/60">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
-            <div class="text-xl font-black text-white tracking-wide font-mono">
-                <span class="text-purple-500">&lt;</span> SourceCode <span class="text-cyan-400">/&gt;</span>
+            <div class="flex items-center gap-3">
+                <img src="png(66).png" alt="SourceCode Logo" class="w-8 h-8 object-contain rounded-full">
+                <div class="text-xl font-black text-white tracking-wide font-mono">
+                    <span class="text-purple-500">&lt;</span> SourceCode <span class="text-cyan-400">/&gt;</span>
+                </div>
             </div>
             <div class="hidden md:flex space-x-8 space-x-reverse text-sm">
                 <a href="#about" class="hover:text-cyan-400 transition">من أنا</a>
@@ -307,33 +102,113 @@
     <section id="services" class="py-20 bg-[#090d1f]">
         <div class="container mx-auto px-6">
             <div class="max-w-2xl mx-auto text-center mb-16">
-                <h2 class="text-3xl font-bold text-white leading-tight">الخدمات التي أتميز بتقديمها</h2>
-                <p class="text-gray-400 mt-2 text-sm leading-relaxed">نجمع بين جمال التصميم وقوة البرمجة لنخرج بمنتج نهائي متكامل دون أي تعقيد وتداخل في النصوص.</p>
+                <h2 class="text-3xl font-bold text-white">الخدمات التي أتميز بتقديمها</h2>
+                <p class="text-gray-400 mt-2 text-sm leading-relaxed">اضغط على أي خدمة لاستكشاف تفاصيل الشرح ونماذج الأكواد والتصاميم الحية دون أي تداخل في النصوص.</p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                <div class="bg-[#060814] p-8 rounded-2xl neon-border transition">
+                <button onclick="openModal('web-modal')" class="text-right w-full bg-[#060814] p-8 rounded-2xl neon-border transition block focus:outline-none">
                     <div class="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center text-cyan-400 text-2xl mb-6">
                         <i class="fas fa-laptop-code"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3">برمجة وتطوير المواقع</h3>
+                    <h3 class="text-xl font-bold text-white mb-3 flex justify-between items-center leading-snug">
+                        برمجة وتطوير المواقع
+                        <span class="text-xs font-normal text-cyan-400 bg-cyan-400/10 px-2 py-1 rounded shrink-0 mr-2">عرض الشرح والكود ←</span>
+                    </h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        بناء مواقع ويب سريعة، متجاوبة ومحمية، باستخدام أحدث التقنيات البرمجية. من صفحات الهبوط التعريفية إلى المتاجر الإلكترونية المعقدة وتخصيص قوالب المنصات.
+                        بناء مواقع ويب سريعة، متجاوبة ومحمية، باستخدام أحدث التقنيات البرمجية. من صفحات الهبوط التعريفية إلى المتاجر الإلكترونية وتخصيص القوالب.
                     </p>
-                </div>
+                </button>
 
-                <div class="bg-[#060814] p-8 rounded-2xl neon-border transition">
+                <button onclick="openModal('logo-modal')" class="text-right w-full bg-[#060814] p-8 rounded-2xl neon-border transition block focus:outline-none">
                     <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 text-2xl mb-6">
                         <i class="fas fa-bezier-curve"></i>
                     </div>
-                    <h3 class="text-xl font-bold text-white mb-3 leading-snug">تصميم الشعارات والهويات</h3>
+                    <h3 class="text-xl font-bold text-white mb-3 flex justify-between items-center leading-snug">
+                        تصميم الشعارات والهويات
+                        <span class="text-xs font-normal text-purple-400 bg-purple-400/10 px-2 py-1 rounded shrink-0 mr-2">عرض معرض الصور ←</span>
+                    </h3>
                     <p class="text-gray-400 text-sm leading-relaxed">
-                        ابتكار شعارات فريدة وعصرية تعبر عن جوهر مشروعك أو قناتك. أركز على البساطة، التميز، وقابلية الشعار للاستخدام على جميع المنصات والمطبوعات المختلفة.
+                        ابتكار شعارات فريدة وعصرية تعبر عن جوهر مشروعك أو قناتك. أركز على البساطة، التميز، وقابلية الشعار للاستخدام على جميع المنصات والمطبوعات.
                     </p>
-                </div>
+                </button>
             </div>
         </div>
     </section>
+
+    <div id="web-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-[#0b0f19] border border-gray-800 rounded-2xl w-full max-w-2xl overflow-hidden max-h-[90vh] flex flex-col modal-active">
+            <div class="p-6 border-b border-gray-800 flex justify-between items-center bg-[#060814]">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fas fa-laptop-code text-cyan-400"></i> تفاصيل خدمة تطوير الويب
+                </h3>
+                <button onclick="closeModal('web-modal')" class="text-gray-400 hover:text-white text-xl">&times;</button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-6">
+                <div>
+                    <h4 class="text-cyan-400 font-bold mb-2">كيف نعمل على موقعك؟</h4>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        نقوم بدراسة فكرة مشروعك بدقة، ثم ننتقل إلى مرحلة التصميم الهيكلي وتوزيع العناصر للتأكد من ملاءمتها لتجربة المستخدم. بعد ذلك نكتب كوداً برمجياً نظيفاً وسريعاً ومتوافقاً مع الهواتف الذكية ومحركات البحث (SEO).
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-cyan-400 font-bold mb-3">هيكل البرمجة النظيف (منظر برمجي):</h4>
+                    <div class="bg-[#060814] border border-gray-800 rounded-xl p-4 font-mono text-xs text-green-400 overflow-x-auto shadow-inner">
+                        <div class="text-gray-500 mb-1">// جلب المكونات وبناء واجهة الصفحة المتجاوبة</div>
+                        <span class="text-purple-400">import</span> { PortfolioPage } <span class="text-purple-400">from</span> <span class="text-yellow-300">'./components/EliteWeb'</span>;<br>
+                        <span class="text-purple-400">function</span> <span class="text-blue-400">initializeProject</span>(clientName) {<br>
+                        &nbsp;&nbsp;<span class="text-purple-400">const speedOptimized</span> = <span class="text-purple-400">true</span>;<br>
+                        &nbsp;&nbsp;<span class="text-purple-400">const responsiveDesign</span> = <span class="text-purple-400">true</span>;<br>
+                        &nbsp;&nbsp;<span class="text-purple-400">return</span> `الموقع جاهز بأعلى كفاءة لـ ${clientName}`;<br>
+                        }<br>
+                        <span class="text-blue-400">console</span>.<span class="text-cyan-400">log</span>(<span class="text-blue-400">initializeProject</span>(<span class="text-yellow-300">"SourceCode Client"</span>));
+                    </div>
+                </div>
+                <ul class="text-xs text-gray-400 space-y-2 bg-[#060814]/50 p-4 rounded-xl border border-gray-800/50">
+                    <li><i class="fas fa-check text-cyan-400 ml-2"></i> تسليم ملفات المشروع بالكامل عبر GitHub وبناء سيرفرات نظيفة.</li>
+                    <li><i class="fas fa-check text-cyan-400 ml-2"></i> كود متجاوب تماماً مع شاشات الـ Mobile والـ iPad والكمبيوتر.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="logo-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-md flex items-center justify-center p-4">
+        <div class="bg-[#0b0f19] border border-gray-800 rounded-2xl w-full max-w-2xl overflow-hidden max-h-[90vh] flex flex-col modal-active">
+            <div class="p-6 border-b border-gray-800 flex justify-between items-center bg-[#060814]">
+                <h3 class="text-xl font-bold text-white flex items-center gap-2">
+                    <i class="fas fa-bezier-curve text-purple-400"></i> تفاصيل ابتكار الشعارات والهويات
+                </h3>
+                <button onclick="closeModal('logo-modal')" class="text-gray-400 hover:text-white text-xl">&times;</button>
+            </div>
+            <div class="p-6 overflow-y-auto space-y-6">
+                <div>
+                    <h4 class="text-purple-400 font-bold mb-2">فلسفة التصميم الفريد:</h4>
+                    <p class="text-sm text-gray-300 leading-relaxed">
+                        تصميم الشعار ليس مجرد رسمة عابرة، بل هو الرمز المباشر الذي يربط العميل بمنتجك. نعتمد على تحويل المفاهيم المعقدة إلى خطوط بسيطة وجذابة يسهل تذكرها، مع اختيار لوحة ألوان سيكولوجية متناسقة.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-purple-400 font-bold mb-3">معرض وعرض حي من تصاميمنا السابقة:</h4>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-[#060814] border border-gray-800 rounded-xl p-4 flex flex-col items-center justify-center group hover:border-purple-500/50 transition">
+                            <div class="w-32 h-32 rounded-full overflow-hidden flex items-center justify-center bg-[#1e1212]/30 p-2 border border-purple-500/20 shadow-lg shadow-purple-500/5">
+                                <img src="png(67).png" alt="شعار النهضة والتقدم" class="w-full h-full object-contain">
+                            </div>
+                            <span class="text-xs font-bold text-white mt-3 text-center">شعار النهضة والتقدم</span>
+                            <span class="text-[10px] text-gray-500 mt-1">رسم ديجيتال مخصص</span>
+                        </div>
+                        <div class="bg-[#060814] border border-gray-800 rounded-xl p-4 flex flex-col items-center justify-center group hover:border-purple-500/50 transition">
+                            <div class="w-32 h-32 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 text-4xl border border-purple-500/20">
+                                <i class="fas fa-gamepad"></i>
+                            </div>
+                            <span class="text-xs font-bold text-white mt-3">شعارات الجيمينج وصناع المحتوى</span>
+                            <span class="text-[10px] text-gray-500 mt-1">لوجو فيكتور مودرن</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <section id="portfolio" class="py-20">
         <div class="container mx-auto px-6">
@@ -346,7 +221,7 @@
                 <div class="bg-[#090d1f] rounded-2xl border border-gray-800 overflow-hidden flex flex-col justify-between group">
                     <div class="p-8 bg-gradient-to-br from-purple-900/40 to-black/20 h-52 flex flex-col justify-center relative overflow-hidden">
                         <span class="absolute top-4 right-4 bg-purple-500/20 text-purple-300 text-xs font-bold px-3 py-1 rounded-full border border-purple-500/30">برمجة ويب + تصميم منصة</span>
-                        <h4 class="text-2xl font-black text-white mb-2 leading-snug">نموذج من أعمالي السابقة</h4>
+                        <h4 class="text-2xl font-black text-white mb-2 leading-snug">شعار النهضة والتقدم</h4>
                         <p class="text-xs text-purple-200 leading-relaxed">منصة متكاملة لصناع محتوى الألعاب والصيانة الرقمية</p>
                     </div>
                     <div class="p-6 bg-[#060814] border-t border-gray-800/80 flex-grow flex flex-col justify-between">
@@ -384,13 +259,12 @@
 
     <section id="contact" class="py-20 bg-[#090d1f] border-t border-gray-900">
         <div class="container mx-auto px-6 max-w-3xl text-center">
-            <h2 class="text-3xl font-bold text-white leading-tight">لنبدأ العمل معاً</h2>
+            <h2 class="text-3xl font-bold text-white mb-4">لنبدأ العمل معاً</h2>
             <p class="text-gray-400 text-sm mb-12 leading-relaxed max-w-xl mx-auto">
                 سواء كنت بحاجة إلى موقع بمظهر برمجي مخصص، أو شعار يعبر عن فكرة مشروعك بدقة، يمكنك التواصل معي مباشرة عبر المنصات التالية وسنتحدث عن تفاصيل مشروعك القادم.
             </p>
             
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-                
                 <div class="bg-[#060814] p-5 rounded-2xl border border-gray-800/80 flex flex-col justify-between items-center text-center">
                     <div class="flex flex-col items-center gap-2 mb-4">
                         <div class="w-12 h-12 bg-purple-500/10 rounded-xl flex items-center justify-center text-purple-400 text-xl">
@@ -420,16 +294,32 @@
                         زيارة حساب إنستغرام
                     </a>
                 </div>
-
             </div>
         </div>
     </section>
 
-    <footer class="bg-[#060814] py-8 border-t border-gray-900/60 text-center text-xs text-gray-600 relative z-10">
+    <footer class="bg-[#060814] py-8 border-t border-gray-900/60 text-center text-xs text-gray-600">
         <div class="container mx-auto px-6">
             <p>© 2026 جميع الحقوق محفوظة لـ <span class="font-mono">SourceCode</span>.</p>
         </div>
     </footer>
+
+    <script>
+        function openModal(id) {
+            document.getElementById(id).classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; 
+        }
+        function closeModal(id) {
+            document.getElementById(id).classList.add('hidden');
+            document.body.style.overflow = 'auto'; 
+        }
+        window.onclick = function(event) {
+            if (event.target.classList.contains('bg-black/80')) {
+                event.target.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+    </script>
 
 </body>
 </html>
